@@ -1,4 +1,6 @@
+/****************/
 /* Define fonts */
+/****************/
 /* Normal (variable weights) */
 @font-face {
     font-family: "HankenGrotesk";
@@ -17,7 +19,9 @@
     font-style: italic;
 }
 
+/**********************/
 /* Page-wide settings */
+/**********************/
 * {
     margin: 0;
     padding: 0;
@@ -35,12 +39,15 @@ body {
     color: white;
 }
 
+/**********/
 /* Navbar */
+/**********/
 header {
     border-bottom: 2px solid rgb(30, 30, 30);
     display: flex;
     justify-content: space-between;
-    padding: 0 10em 0 8em;
+    padding: 0 8vw;
+    gap: 2em;
 }
 
 #left-section {
@@ -86,6 +93,7 @@ header {
     align-items: center;
     padding: 0 0.75em;
     border: 2px solid transparent;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -111,9 +119,106 @@ header {
     font-size: 1em;
     font-weight: bold;
     padding: 0.8em 1em;
+    white-space: nowrap;
 }
 
 #header-download-button:hover {
     background-color: rgb(69, 117, 166);
     transition: 0.2s;
 }
+
+/********/
+/* Hero */
+/********/
+#hero {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8em calc(0.5em + 8vw);
+    gap: 4em;
+}
+
+#hero-information-container {
+    flex: 2;
+}
+
+#hero h3 {
+    font-size: 0.9em;
+    letter-spacing: 1.5;
+    margin-bottom: 0.8em;
+}
+
+#hero h1 {
+    font-size: 5em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+#hero h1 span {
+    color: rgb(109, 173, 224);
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero-image-container {
+    padding: 3em 2%;
+    flex: 1;
+}
+
+#hero-image {
+    width: 100%;
+    max-width: 21em;
+    min-width: 9em;
+    height: auto;
+}
+
+#hero-actions {
+    margin-top: 3em;
+    display: flex;
+    justify-content: start;
+    gap: 4em;
+}
+
+#hero-download-button {
+    background-color: rgb(109, 173, 224);
+    border: none;
+    border-radius: 4px;
+    font-family: "HankenGrotesk", sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0.8em 3em;
+}
+
+#hero-download-button:hover {
+    background-color: rgb(69, 117, 166);
+    transition: 0.2s;
+}
+
+#hero-learn-more-button {
+    font-size: 1.4em;
+    font-weight: bold;
+    background: none;
+    color: white;
+    border: none;
+}
+
+#hero-learn-more-button:hover {
+    color: rgb(200, 200, 200);
+    transition: 0.2s;
+}
+
+#hero-learn-more-button:hover object {
+    transform: translateX(10px);
+}
+
+#hero-learn-more-button object {
+    width: 1em;
+    transition: transform 0.5s ease;
+    position: relative;
+    transform: translateX(5px);
+    top: 5%;
+}
+
+
+/* Media query - remove hero image and convert header nav links to hamburger menu at ~0.5vw */
