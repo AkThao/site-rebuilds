@@ -133,7 +133,7 @@ header {
 #hero {
     display: flex;
     justify-content: space-evenly;
-    padding: 8em calc(0.5em + 8vw);
+    padding: 8.5em calc(0.5em + 8vw);
     gap: 4em;
 }
 
@@ -141,10 +141,11 @@ header {
     flex: 2;
 }
 
-#hero h3 {
+#hero h4 {
     font-size: 0.9em;
+    font-weight: 400;
     letter-spacing: 1.5;
-    margin-bottom: 0.8em;
+    margin-bottom: 1em;
 }
 
 #hero h1 {
@@ -157,7 +158,8 @@ header {
     color: rgb(109, 173, 224);
 }
 
-#hero h2 {
+#hero h3 {
+    font-size: 1.4em;
     font-weight: 300;
 }
 
