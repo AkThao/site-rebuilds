@@ -1,6 +1,6 @@
-/****************/
-/* Define fonts */
-/****************/
+/******************/
+/** Define fonts **/
+/******************/
 /* Normal (variable weights) */
 @font-face {
     font-family: "HankenGrotesk";
@@ -19,9 +19,9 @@
     font-style: italic;
 }
 
-/**********************/
-/* Page-wide settings */
-/**********************/
+/************************/
+/** Page-wide settings **/
+/************************/
 * {
     margin: 0;
     padding: 0;
@@ -37,17 +37,25 @@ body {
     font-family: "HankenGrotesk", sans-serif;
     background-color: rgb(9, 9, 9);
     color: white;
+    max-width: 150em;
+    margin: auto;
 }
 
-/**********/
-/* Navbar */
-/**********/
+/************/
+/** Navbar **/
+/************/
 header {
     border-bottom: 2px solid rgb(30, 30, 30);
     display: flex;
     justify-content: space-between;
     padding: 0 8vw;
     gap: 2em;
+    position: fixed;
+    width: 100%;
+    max-width: 150em;
+    top: 0;
+    background-color: rgb(9, 9, 9);
+    margin: auto;
 }
 
 #left-section {
@@ -127,14 +135,15 @@ header {
     transition: 0.2s;
 }
 
-/********/
-/* Hero */
-/********/
+/**********/
+/** Hero **/
+/**********/
 #hero {
     display: flex;
     justify-content: space-evenly;
     padding: 8.5em calc(0.5em + 8vw);
     gap: 4em;
+    margin-top: 4em;
 }
 
 #hero-information-container {
@@ -222,5 +231,48 @@ header {
     top: 5%;
 }
 
+/****************/
+/** Advantages **/
+/****************/
+#advantages {
+    padding: 3.5em calc(0.5em + 8vw);
+}
 
+#advantages h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#advantages h4 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+
+#advantages-grid {
+    padding-top: 7em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+}
+
+.advantage-individual-heading {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.advantage-individual-heading h5 {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.advantage-grid-cell p {
+    margin-top: 0.8em;
+    font-size: 1.1em;
+}
+
+/* Todo */
 /* Media query - remove hero image and convert header nav links to hamburger menu at ~0.5vw */
+/* Replace black with rgb(9, 9, 9) everywhere, use CSS variable */
