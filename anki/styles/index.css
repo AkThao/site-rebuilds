@@ -293,11 +293,29 @@ header {
     margin-top: 0.5em;
 }
 
+#testimonials-carousel {
+    margin-top: 8em;
+    position: relative;
+}
+
 .individual-testimonial {
     background-color: rgb(127, 187, 230);
-    margin: 8em 0;
     padding: 3em 4em 4em;
     border-radius: 0.5em;
+    position: absolute;
+    height: 24em;
+}
+
+#testimonial-1 {
+    visibility: visible;
+}
+
+#testimonial-2 {
+    visibility: hidden;
+}
+
+#testimonial-3 {
+    visibility: hidden;
 }
 
 .testimonial-top-row {
