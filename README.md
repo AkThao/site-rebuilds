@@ -5,3 +5,4 @@ The goal is not to create pixel-perfect replicas, but rather create something th
 The following is a list of websites I am studying and rebuilding as part of this project:
 - Anki: https://apps.ankiweb.net/
 - Dovetail: https://dovetail.com/
+- ETF Atlas: https://etfatlas.com/
