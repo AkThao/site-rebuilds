@@ -6,3 +6,4 @@ The following is a list of websites I am studying and rebuilding as part of this
 - Anki: https://apps.ankiweb.net/
 - Dovetail: https://dovetail.com/
 - ETF Atlas: https://etfatlas.com/
+- Shift Nudge: https://shiftnudge.com/
